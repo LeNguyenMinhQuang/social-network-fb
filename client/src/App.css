@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  transition: 0.2s all ease-in-out;
+  /* color: rgba(0, 0, 0, 0.7); */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --bgColor1: #f0f2f5;
+  --bgColor2: #fff;
+  --blue: #1877f2;
+  --green: #42b72a;
+  --gray: #65676b;
+  --pink: #ff589b;
+  --boxShadow1: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  --boxShadow2: 0 2px 8px rgb(0 0 0 / 10%);
+  --sm: 600px;
+  --md: 900px;
+  --lg: 1200px;
+}
+
+.scale0 {
+  transform: scale(0);
+}
+
+.hidden {
+  display: none;
+}
+
+.slideUp {
+  bottom: 50px !important;
+}
+
+@keyframes Popup {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(200px);
+    opacity: 0.4;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideToRight {
+  from {
+    transform: translateX(-200px);
+    opacity: 0.4;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideToLeft {
+  from {
+    transform: translateX(200px);
+    opacity: 0.4;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideToLeftsmall {
+  from {
+    transform: translateX(40px);
+    opacity: 0.4;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0.4;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
